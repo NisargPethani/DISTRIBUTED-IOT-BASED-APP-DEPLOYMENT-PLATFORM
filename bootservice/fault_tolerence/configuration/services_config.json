@@ -1,0 +1,53 @@
+{
+    "monitoring": {
+        "username": "", 
+        "ip": "", 
+        "vm_name": "VM2"
+    }, 
+    "controller_server": {
+        "username": "", 
+        "ip": "", 
+        "vm_name": "VM2"
+    }, 
+    "deployer": {
+        "username": "", 
+        "ip": "", 
+        "vm_name": "VM1"
+    }, 
+    "sensor_server": {
+        "username": "", 
+        "ip": "", 
+        "vm_name": "VM1"
+    }, 
+    "ui_appmanager": {
+        "username": "", 
+        "ip": "", 
+        "vm_name": "VM1"
+    }, 
+    "kafka": {
+        "username": "", 
+        "ip": "", 
+        "port": 9092, 
+        "vm_name": "VM1"
+    }, 
+    "sensor_manager": {
+        "username": "", 
+        "ip": "", 
+        "vm_name": "VM2"
+    }, 
+    "node_manager": {
+        "username": "", 
+        "ip": "", 
+        "vm_name": "VM2"
+    }, 
+    "scheduler": {
+        "username": "", 
+        "ip": "", 
+        "vm_name": "VM2"
+    }, 
+    "fault_tolerence": {
+        "username": "", 
+        "ip": "", 
+        "vm_name": "VM1"
+    }
+}
