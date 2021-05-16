@@ -1,0 +1,9 @@
+{
+    "company": "ABC",
+    "model": "X1",
+    "data_rate": "4 ms",
+    "field_count": 2,
+    "field_1": "int",
+    "field_2": "string",
+    "sensor_type": "sensor_type_1"
+}

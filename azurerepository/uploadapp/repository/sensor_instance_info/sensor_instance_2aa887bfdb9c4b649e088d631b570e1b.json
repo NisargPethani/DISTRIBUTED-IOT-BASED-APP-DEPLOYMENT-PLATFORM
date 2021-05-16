@@ -1,0 +1,14 @@
+{
+	"sensor_type": "sensor_type_1",
+	"sensor_location" : {
+		"ip" : "127.0.0.1",
+		"port" : "5500"
+	},
+	"geo_location" : {
+		"room_no" : "1",
+		"house_no" : "123",
+		"street" : "ABC",
+		"city" : "Bhopal"
+	}
+
+}
