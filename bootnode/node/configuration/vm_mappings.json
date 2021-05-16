@@ -1,0 +1,32 @@
+{
+    "node manager": {
+        "username": "",
+        "IP": "",
+        "vm_name": "VM3"
+    },
+    "deployer": {
+        "username": "",
+        "IP": "",
+        "vm_name": "VM3"
+    },
+    "kafka": {
+        "username": "",
+        "IP": "",
+        "vm_name": "VM1"
+    },
+    "sensor_manager": {
+        "username": "",
+        "IP": "",
+        "vm_name": "VM1"
+    },
+    "scheduler": {
+        "username": "",
+        "IP": "",
+        "vm_name": "VM2"
+    },
+    "app_manager": {
+        "username": "",
+        "IP": "",
+        "vm_name": "VM2"
+    }
+}
