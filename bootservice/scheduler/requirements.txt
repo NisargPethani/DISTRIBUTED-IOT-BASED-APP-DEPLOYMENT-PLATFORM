@@ -1,0 +1,8 @@
+flask
+kafka-python
+mysql-connector-python
+requests
+paramiko
+azure-storage-file-share
+twilio
+secure-smtplib
