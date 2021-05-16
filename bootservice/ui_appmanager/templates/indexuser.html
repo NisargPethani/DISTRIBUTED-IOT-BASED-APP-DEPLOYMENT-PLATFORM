@@ -1,0 +1,99 @@
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <style>
+            body{
+                background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%) no-repeat center center fixed;
+            }
+            .left{
+                left:0;
+                margin-left: 30px;
+                width:47%;
+                height: 75%;
+                background-color:lightgray;
+                position: fixed;
+            }
+            .left:hover{
+                background-color: black;
+                color:white;
+                cursor: pointer;
+            }
+            .right{
+                right:0;
+                margin-right: 30px;
+                width:47%;
+                height: 75%;
+                background-color:lightgray;
+                position: fixed;
+            }
+            #bo{
+                z-index: 1;
+                position: absolute;
+                height: 80%;
+                width: 99%;
+                opacity:0.8;
+            }
+            .middle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .right:hover{
+                background-color: black;
+                color:white;
+                cursor: pointer;
+            }
+            img{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+            }
+            .top{
+                background-color:lightgray;
+                width:98%;
+                opacity:0.8;
+            }
+            .btn {
+                border: 2px solid black;
+                padding: 10px 15px;
+                font-size: 30px;
+                border:none;
+                cursor: pointer;
+                background: white;
+                color: black;
+            }
+            .btn:hover {
+                background: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <br><br>
+            <div class="top">
+                <br>
+                <a href="/logout"><button class="btn" height="200px" width="200px"><i class="fa fa-home"> Home</i></button></a><br>
+                <br>
+                <span style="font-size: 30px;">What do you want to do?</span>
+                <br>
+            </div>
+            <br>
+            <br>
+            <div id="bo">
+                <div class="left" onclick="location.href='deploy_upload';">
+                    <div class="middle">
+                        <p style="font-size: 35px;">Deploy Application</p>
+                    </div>
+                </div>
+                <div class="right" onclick="location.href='notification';">
+                    <div class="middle">
+                        <p style="font-size: 35px;">See Notification</p>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>

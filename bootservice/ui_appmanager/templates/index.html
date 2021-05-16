@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <style>
+            body{
+                background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%) no-repeat center center fixed;
+            }
+            .left{
+                left:0;
+                margin-left: 30px;
+                width:30%;
+                height: 75%;
+                background-color:lightgray;
+                position: fixed;
+            }
+            .left:hover{
+                background-color: black;
+                color:white;
+                cursor: pointer;
+            }
+            .right{
+                right:0;
+                margin-right: 30px;
+                width:30%;
+                height: 75%;
+                background-color:lightgray;
+                position: fixed;
+            }
+            .center{
+                left:644;
+                width:30%;
+                height:75%;
+                position: fixed;
+                background-color: lightgray;
+            }
+            .center:hover{
+                background-color: black;
+                color:white;
+                cursor: pointer;
+            }
+            #bo{
+                z-index: 1;
+                position: absolute;
+                height: 80%;
+                width: 99%;
+                opacity:0.8;
+            }
+            .middle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .right:hover{
+                background-color: black;
+                color:white;
+                cursor: pointer;
+            }
+            img{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+            }
+            .top{
+                background-color:lightgray;
+                width:98%;
+                opacity:0.8;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <br><br>
+            <div class="top">
+                <span style="font-size: 45px;">Group 7 Application Development Platform</span><br>
+                <span style="font-size: 30px;">Choose Your Role </span>
+            </div>
+            <br>
+            <br>
+            <div id="bo">
+                <div class="left" onclick="location.href='signupdev';">
+                    <div class="middle">
+                        <img src="https://lh3.googleusercontent.com/d/17sAPw9qQBySoxxphicXg7tESlspOmfS6">
+                        <p style="font-size: 35px;">Application Developer</p>
+                    </div>
+                </div>
+                <div class="center" onclick="location.href='signupconfi';">
+                    <div class="middle">
+                        <img src="https://lh3.googleusercontent.com/d/1Dh-MRnZ9jdZhLRxTtqAHoHc2MgKvHoqY">
+                        <p style="font-size: 35px;">Platform Configurer</p>
+                    </div>
+                </div>
+                <div class="right" onclick="location.href='signup';">
+                    <div class="middle">
+                        <img src="https://lh3.googleusercontent.com/d/1Pcppsf5ztXrNTUnaPf_XbqanaF8Wpv_V">
+                        <p style="font-size: 35px;">User</p>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>

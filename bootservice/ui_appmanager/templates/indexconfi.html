@@ -1,0 +1,127 @@
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <style>
+            body {
+                background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%) no-repeat center center fixed;
+            }
+            .obj1{
+                left:0;
+                margin-left: 15px;
+                width:24%;
+                height: 75%;
+                background-color:lightgray;
+                position: fixed;
+            }
+            .obj1:hover{
+                background-color: black;
+                color:white;
+                cursor: pointer;
+            }
+            .obj2{
+                left:470;
+                width:24%;
+                height: 75%;
+                background-color:lightgray;
+                position: fixed;
+            }
+            .obj2:hover{
+                background-color: black;
+                color:white;
+                cursor: pointer;
+            }
+            .obj3{
+                left:925;
+                width:24%;
+                height: 75%;
+                background-color:lightgray;
+                position: fixed;
+            }
+            .obj3:hover{
+                background-color: black;
+                color:white;
+                cursor: pointer;
+            }
+            .obj4{
+                right:0;
+                margin-right: 15px;
+                width:24%;
+                height: 75%;
+                background-color:lightgray;
+                position: fixed;
+            }
+            .obj4:hover{
+                background-color: black;
+                color:white;
+                cursor: pointer;
+            }
+            #bo{
+                z-index: 1;
+                position: absolute;
+                height: 80%;
+                width: 99%;
+                opacity:0.8;
+            }
+            .middle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .top{
+                background-color:lightgray;
+                width:98%;
+                opacity: 0.8;
+            }
+            .btn {
+                border: 2px solid black;
+                padding: 10px 15px;
+                font-size: 30px;
+                border:none;
+                cursor: pointer;
+                background: white;
+                color: black;
+            }
+            .btn:hover {
+                background: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <br>
+            <div class="top">
+                <br>
+                <a href="/logout"><button class="btn" height="200px" width="200px"><i class="fa fa-home"> Home</i></button></a><br>
+                <br>
+                <span style="font-size: 30px;">What do you want to do?</span>
+                <br>
+            </div>
+            <br><br>
+            <div id="bo">
+                <div class="obj1" onclick="location.href='sensor_type_upload';">
+                    <div class="middle">
+                        <p style="font-size: 35px;">Sensor Type Upload</p>
+                    </div>
+                </div>
+                <div class="obj2" onclick="location.href='sensor_instance_upload';">
+                    <div class="middle">
+                        <p style="font-size: 35px;">Sensor Instance Upload</p>
+                    </div>
+                </div>
+                <div class="obj3" onclick="location.href='controller_type_upload';">
+                    <div class="middle">
+                        <p style="font-size: 35px;">Controller Type Upload</p>
+                    </div>
+                </div>
+                <div class="obj4" onclick="location.href='controller_instance_upload';">
+                    <div class="middle">
+                        <p style="font-size: 35px;">Controller Instance Upload</p>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>

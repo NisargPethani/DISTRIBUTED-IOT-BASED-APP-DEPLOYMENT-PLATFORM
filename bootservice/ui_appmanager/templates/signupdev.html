@@ -1,0 +1,85 @@
+<!doctype html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+  <head>
+    <title>Signup</title>
+    <style> 
+    body {
+      background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%) no-repeat center center fixed;
+    }
+    td {
+      text-align: center;
+      padding: 5px;
+    }
+    form{
+      margin-right: 38%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      margin-left: 38%;
+      margin-top:1%;
+      background-color: white;
+      border:2px solid black;
+      border-radius: 1%;
+    }
+    input{
+      background-color: lightgray;
+      height: 30px;
+      width: 200px;
+      font-size: 20px;
+      border: 1px solid black;
+    }
+    #button{
+      height: 40px;
+      width: 300px;
+      background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+      border: 1px solid black;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn {
+      margin-top: 10%;
+      border: 2px solid black;
+      padding: 10px 15px;
+      font-size: 30px;
+      border:none;
+      cursor: pointer;
+      background: white;
+      color: black;
+    }
+    .btn:hover {
+      background: black;
+      color: white;
+    }
+    #button:hover{
+      background: linear-gradient(to bottom right,#ff99cc 0%,#33ccff 100%);
+    }
+    </style>
+  </head>
+  <body>
+    <center>
+      <a href="/logout"><button class="btn" height="200px" width="200px"><i class="fa fa-home"> Home</i></button></a>
+      <form action="" method="post">
+        <h1>Registration</h1>
+        <br>
+        <table>
+          <tr>
+            <td><p style="font-size:20px;">Username:</p></td>
+            <td><input type="text" name="username"></td>
+          </tr>
+          <tr>
+            <td><p style="font-size:20px;">Password:</p></td>
+            <td><input type="password" name="password"></td>
+          </tr>
+        </table>
+        <br><br>
+        <input id="button" type="submit" value="Register">
+        {% if error %}
+        <p style="color:red;" class="error">{{ error }}</p>
+        {% endif %}
+      </form>
+      <br>
+      <p style="font-size:18px;">Already registered? <a href="/logindev">click here to login</a></p>
+    </center>
+  </body>
+</html>

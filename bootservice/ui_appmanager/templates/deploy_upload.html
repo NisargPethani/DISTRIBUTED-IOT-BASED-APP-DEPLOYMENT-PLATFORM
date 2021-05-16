@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <title>File Upload</title>
+    <style> 
+      body {
+        background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%) no-repeat center center fixed;
+      }
+      td {
+        padding: 5px;
+      }
+      form{
+        margin-right: 30%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-left: 30%;
+        margin-top:1%;
+        background-color: white;
+        border:2px solid black;
+        border-radius: 1%;
+      }
+      input{
+        height: 25px;
+        background-color: lightgray;
+        font-size: 20px;
+        border: 1px solid black;
+      }
+      #button{
+        height: 40px;
+        width: 300px;
+        background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+        border: 1px solid black;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .btn {
+        border: 2px solid black;
+        padding: 10px 15px;
+        font-size: 30px;
+        border:none;
+        cursor: pointer;
+        background: white;
+        color: black;
+      }
+      .btn:hover {
+        background: black;
+        color: white;
+      }
+      #button:hover{
+        background: linear-gradient(to bottom right,#ff99cc 0%,#33ccff 100%);
+      }
+    </style>
+    <script>
+      function yesnoCheck() {
+        if (document.getElementById('yesCheck').checked) {
+          document.getElementById('ifYes').style.display = 'table-row';
+          document.getElementById('ifYes1').style.display = 'table-row';
+          document.getElementById('ifYes2').style.display = 'table-row';
+        }
+        else{
+          document.getElementById('ifYes').style.display = 'none';
+          document.getElementById('ifYes1').style.display = 'none';
+          document.getElementById('ifYes2').style.display = 'none';
+        }
+    }
+
+    function yesnoCheck1() {
+        if (document.getElementById('locCheck').checked) {
+          document.getElementById('loc1').style.display = 'table-row';
+          document.getElementById('loc2').style.display = 'table-row';
+          document.getElementById('loc3').style.display = 'table-row';
+        }
+        else{
+          document.getElementById('loc1').style.display = 'none';
+          document.getElementById('loc2').style.display = 'none';
+          document.getElementById('loc3').style.display = 'none';
+        }
+    }
+    </script>
+  </head>
+  <body onload="yesnoCheck1(); yesnoCheck()">
+    <center>
+      <a href="/logout"><button class="btn" height="200px" width="200px"><i class="fa fa-home"> Home</i></button></a>
+      {% if appinfo %}
+      <p class="error"><strong>Appinfo(id, Name):</strong><br> {{ appinfo }}
+      {% endif %}
+
+      <form method="POST" action="/deploy_uploader" enctype="multipart/form-data">
+        <table>
+          <tr>
+            <td>App id:</td>
+            <td><input type="text" name="appid" required></td>
+          </tr>
+          <tr id="algo">
+            <td>Alogrithm No:</td>
+            <td><input type="text" name="algonum" required value="0"></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="font-size: 25px;text-align: center;"><br>Location Information</td>
+          </tr>
+          <tr>
+            <td>City:</td>
+            <td><input type="text" name="loccity"></td>
+          </tr>
+          <tr>
+            <td>Do you want to deploy at specific Location?</td>
+            <td>&nbsp Yes: <input id="locCheck" type="radio" name="loc" value="Yes" onclick="yesnoCheck1();" required> No :<input type="radio" name="loc" value="No" onclick="yesnoCheck1();" required checked="checked"> </td>
+          </tr>
+          <tr id="loc1">
+            <td>Room no:</td>
+            <td><input type="text" name="locroom"></td>
+          </tr>
+          <tr id="loc2">
+            <td>House No:</td>
+            <td><input type="text" name="lochouse"></td>
+          </tr>
+          <tr id="loc3">
+            <td>Street:</td>
+            <td><input type="text" name="locstreet"></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="font-size: 25px;text-align: center;"><br>Execution Information</td>
+          </tr>
+          <tr>
+            <td>Date:</td>
+            <td><input type="date" name="sdate" required></td>
+          </tr>
+          <tr>
+            <td>Start Time:</td>
+            <td><input type="time" name="stime" required></td>
+          </tr>
+          <tr>
+            <td>Duration(in minutes):</td>
+            <td><input style="width:85.5px;" type="number" name="duration" min="0" required></td>
+          </tr>
+          <tr>
+            <td>Repeatation needed?</td>
+            <td>&nbsp Yes: <input id="yesCheck" type="radio" name="repeatation" value="Yes" onclick="yesnoCheck();" required> No :<input type="radio" name="repeatation" value="No" onclick="yesnoCheck();" required checked="checked"> </td>
+          </tr>
+          </table>
+          <table>
+          <tr id="ifYes">
+            <td colspan="5"><br>After how much time?</td>
+          </tr>
+          <tr id="ifYes1">
+            <td>Year</td>
+            <td>Month</td>
+            <td>Day</td>
+            <td>Hour</td>
+            <td>Minute</td>
+          </tr>
+          <tr id="ifYes2">
+            <td><input style="width: 122px;" type="number" name="ryear" min="0" max="5" value="0" required></td>
+            <td><input style="width: 122px;" type="number" name="rmonth" min="0" max="12" value="0" required></td>
+            <td><input style="width: 122px;" type="number" name="rday" min="0" max="31"  value="0" required></td>
+            <td><input style="width: 122px;" type="number" name="rhour" min="0" max="24" value="0"  required></td>
+            <td><input style="width: 122px;" type="number" name="rmin" min="0" max="60" value="0"  required></td>
+          </tr>
+
+          </table>
+        <p><input id="button" type="submit" value="Submit"></p>
+        {% if error %}
+        <p style="color:red;" class="error">{{ error }}</p>
+        {% endif %}
+        {% if message %}
+        <p style="color:green;" class="error">{{ message }}</p>
+        {% endif %}
+      </form>
+      <p style="font-size:18px;"><a href="/homeuser">Click here to go back to User home page</a></p>
+    </center>
+    
+  </body>
+</html>
