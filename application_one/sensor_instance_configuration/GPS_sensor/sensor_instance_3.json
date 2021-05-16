@@ -1,0 +1,13 @@
+{
+    "sensor_type": "sensor_type_GPS",
+    "sensor_location": {
+        "ip": "",
+        "port": "50733"
+    },
+    "geo_location": {
+        "room_no": "0",
+        "house_no": "0",
+        "street": "UNK",
+        "city": "HYD"
+    }
+}

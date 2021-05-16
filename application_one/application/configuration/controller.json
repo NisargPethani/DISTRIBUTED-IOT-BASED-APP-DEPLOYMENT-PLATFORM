@@ -1,0 +1,65 @@
+{
+    "controller_instance_count": 15,
+    "controller_instance_info": [
+        {
+            "controller_instance_index": 0,
+            "controller_instance_type": "controller_type_LIGHT"
+        },
+        {
+            "controller_instance_index": 1,
+            "controller_instance_type": "controller_type_AC"
+        },
+        {
+            "controller_instance_index": 2,
+            "controller_instance_type": "controller_type_BUZZER"
+        },
+        {
+            "controller_instance_index": 3,
+            "controller_instance_type": "controller_type_LIGHT"
+        },
+        {
+            "controller_instance_index": 4,
+            "controller_instance_type": "controller_type_AC"
+        },
+        {
+            "controller_instance_index": 5,
+            "controller_instance_type": "controller_type_BUZZER"
+        },
+        {
+            "controller_instance_index": 6,
+            "controller_instance_type": "controller_type_LIGHT"
+        },
+        {
+            "controller_instance_index": 7,
+            "controller_instance_type": "controller_type_AC"
+        },
+        {
+            "controller_instance_index": 8,
+            "controller_instance_type": "controller_type_BUZZER"
+        },
+        {
+            "controller_instance_index": 9,
+            "controller_instance_type": "controller_type_LIGHT"
+        },
+        {
+            "controller_instance_index": 10,
+            "controller_instance_type": "controller_type_AC"
+        },
+        {
+            "controller_instance_index": 11,
+            "controller_instance_type": "controller_type_BUZZER"
+        },
+        {
+            "controller_instance_index": 12,
+            "controller_instance_type": "controller_type_LIGHT"
+        },
+        {
+            "controller_instance_index": 13,
+            "controller_instance_type": "controller_type_AC"
+        },
+        {
+            "controller_instance_index": 14,
+            "controller_instance_type": "controller_type_BUZZER"
+        }
+    ]
+}

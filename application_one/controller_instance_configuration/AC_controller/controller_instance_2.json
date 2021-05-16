@@ -1,0 +1,13 @@
+{
+    "controller_type": "controller_type_AC",
+    "controller_location": {
+        "ip": "",
+        "port": "50622"
+    },
+    "geo_location": {
+        "room_no": "0",
+        "house_no": "0",
+        "street": "UNK",
+        "city": "HYD"
+    }
+}

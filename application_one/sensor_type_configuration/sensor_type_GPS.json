@@ -1,0 +1,8 @@
+{
+	"company" : "GPS:ABC",
+	"model" : "MODEL1",
+	"data_rate" : "1 SEC",
+	"field_count" : 2,
+	"field_1": "int",
+	"field_2": "int"			
+}

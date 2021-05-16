@@ -1,0 +1,7 @@
+{
+	"company" : "TEMPRATURE:SAMSUNG",
+	"model" : "MODEL1",
+	"data_rate" : "1 SEC",
+	"field_count" : 1,
+	"field_1": "int"			
+}

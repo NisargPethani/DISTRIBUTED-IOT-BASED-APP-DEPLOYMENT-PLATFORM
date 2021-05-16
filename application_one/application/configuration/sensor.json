@@ -1,0 +1,85 @@
+{
+    "sensor_instance_count": 20,
+    "sensor_instance_info": [
+        {
+            "sensor_instance_index": 0,
+            "sensor_instance_type": "sensor_type_GPS"
+        },
+        {
+            "sensor_instance_index": 1,
+            "sensor_instance_type": "sensor_type_TEMP"
+        },
+        {
+            "sensor_instance_index": 2,
+            "sensor_instance_type": "sensor_type_LIGHT"
+        },
+        {
+            "sensor_instance_index": 3,
+            "sensor_instance_type": "sensor_type_BIOMETRIC"
+        },
+        {
+            "sensor_instance_index": 4,
+            "sensor_instance_type": "sensor_type_GPS"
+        },
+        {
+            "sensor_instance_index": 5,
+            "sensor_instance_type": "sensor_type_TEMP"
+        },
+        {
+            "sensor_instance_index": 6,
+            "sensor_instance_type": "sensor_type_LIGHT"
+        },
+        {
+            "sensor_instance_index": 7,
+            "sensor_instance_type": "sensor_type_BIOMETRIC"
+        },
+        {
+            "sensor_instance_index": 8,
+            "sensor_instance_type": "sensor_type_GPS"
+        },
+        {
+            "sensor_instance_index": 9,
+            "sensor_instance_type": "sensor_type_TEMP"
+        },
+        {
+            "sensor_instance_index": 10,
+            "sensor_instance_type": "sensor_type_LIGHT"
+        },
+        {
+            "sensor_instance_index": 11,
+            "sensor_instance_type": "sensor_type_BIOMETRIC"
+        },
+        {
+            "sensor_instance_index": 12,
+            "sensor_instance_type": "sensor_type_GPS"
+        },
+        {
+            "sensor_instance_index": 13,
+            "sensor_instance_type": "sensor_type_TEMP"
+        },
+        {
+            "sensor_instance_index": 14,
+            "sensor_instance_type": "sensor_type_LIGHT"
+        },
+        {
+            "sensor_instance_index": 15,
+            "sensor_instance_type": "sensor_type_BIOMETRIC"
+        },
+        {
+            "sensor_instance_index": 16,
+            "sensor_instance_type": "sensor_type_GPS"
+        },
+        {
+            "sensor_instance_index": 17,
+            "sensor_instance_type": "sensor_type_TEMP"
+        },
+        {
+            "sensor_instance_index": 18,
+            "sensor_instance_type": "sensor_type_LIGHT"
+        },
+        {
+            "sensor_instance_index": 19,
+            "sensor_instance_type": "sensor_type_BIOMETRIC"
+        }
+    ]
+}
