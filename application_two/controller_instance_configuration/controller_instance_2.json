@@ -1,0 +1,13 @@
+{
+	"controller_type": "controller_type_2",
+	"controller_location" : {
+		"ip" : "",
+		"port" : "55001"
+	},
+	"geo_location" : {
+		"room_no" : "3",
+		"house_no" : "321",
+		"street" : "EFG",
+		"city" : "Varanasi"
+	}
+}

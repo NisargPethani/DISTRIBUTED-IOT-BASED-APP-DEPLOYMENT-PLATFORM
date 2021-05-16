@@ -1,0 +1,14 @@
+{
+	"controller_type": "controller_type_1",
+	"controller_location" : {
+		"ip" : "",
+		"port" : "55000"
+	},
+	"geo_location" : {
+		"room_no" : "1",
+		"house_no" : "123",
+		"street" : "ABC",
+		"city" : "Bhopal"
+	}
+
+}

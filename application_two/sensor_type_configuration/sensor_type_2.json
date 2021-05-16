@@ -1,0 +1,9 @@
+{
+	
+		"company" : "EFG",
+		"model" : "X2",
+		"data_rate" : "6 ms",
+		"field_count" : 1,
+		"field_1": "float"			
+	
+}

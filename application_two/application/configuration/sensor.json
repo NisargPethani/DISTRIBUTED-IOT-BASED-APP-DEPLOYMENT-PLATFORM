@@ -1,0 +1,9 @@
+{
+    "sensor_instance_count" : 1,
+    "sensor_instance_info" : [
+        {
+            "sensor_instance_index": 0,
+            "sensor_instance_type" : "sensor_type_1"
+        }
+    ]
+}
